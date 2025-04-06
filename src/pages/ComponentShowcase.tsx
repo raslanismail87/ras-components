@@ -56,14 +56,14 @@ const ComponentShowcase: React.FC = () => {
   const { toast } = useToast();
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-8">Component Showcase</h1>
+    <div className="container mx-auto p-8 bg-gradient-to-br from-white to-emerald-50 dark:from-zinc-900 dark:to-zinc-800 min-h-screen">
+      <h1 className="text-4xl font-bold mb-10 text-emerald-600 dark:text-emerald-400 text-center">Component Showcase</h1>
       
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Actions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Button</h3>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-emerald-600 dark:text-emerald-400 border-b-2 border-emerald-200 dark:border-emerald-800 pb-2">Actions</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Button</h3>
             <div className="flex flex-wrap gap-2">
               <Button>Default</Button>
               <Button variant="destructive">Destructive</Button>
@@ -74,8 +74,8 @@ const ComponentShowcase: React.FC = () => {
             </div>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Dropdown</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Dropdown</h3>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button>Open Menu</Button>
@@ -88,44 +88,44 @@ const ComponentShowcase: React.FC = () => {
             </DropdownMenu>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Modal</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Modal</h3>
             <Modal />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Swap</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Swap</h3>
             <Swap />
           </div>
         </div>
       </section>
       
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Data Display</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Alert</h3>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-emerald-600 dark:text-emerald-400 border-b-2 border-emerald-200 dark:border-emerald-800 pb-2">Data Display</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Alert</h3>
             <Alert>
               <AlertTitle>Alert Title</AlertTitle>
               <AlertDescription>This is an alert description.</AlertDescription>
             </Alert>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Avatar</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Avatar</h3>
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Badge</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Badge</h3>
             <Badge>Badge</Badge>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Card</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Card</h3>
             <Card>
               <CardHeader>
                 <CardTitle>Card Title</CardTitle>
@@ -140,8 +140,8 @@ const ComponentShowcase: React.FC = () => {
             </Card>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Carousel</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Carousel</h3>
             <Carousel>
               <CarouselContent>
                 <CarouselItem>Item 1</CarouselItem>
@@ -153,13 +153,13 @@ const ComponentShowcase: React.FC = () => {
             </Carousel>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Chat Bubble</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Chat Bubble</h3>
             <ChatBubble />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Collapse</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Collapse</h3>
             <Collapsible>
               <CollapsibleTrigger asChild>
                 <Button variant="outline">Toggle</Button>
@@ -172,33 +172,33 @@ const ComponentShowcase: React.FC = () => {
             </Collapsible>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Countdown</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Countdown</h3>
             <Countdown />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Kbd</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Kbd</h3>
             <Kbd />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Progress</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Progress</h3>
             <Progress value={60} />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Radial Progress</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Radial Progress</h3>
             <RadialProgress />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Stat</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Stat</h3>
             <Stat />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Table</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Table</h3>
             <Table>
               <TableCaption>A simple table example</TableCaption>
               <TableHeader>
@@ -220,13 +220,13 @@ const ComponentShowcase: React.FC = () => {
             </Table>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Timeline</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Timeline</h3>
             <Timeline />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Tooltip</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Tooltip</h3>
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -241,11 +241,11 @@ const ComponentShowcase: React.FC = () => {
         </div>
       </section>
       
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Data Input</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Checkbox</h3>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-emerald-600 dark:text-emerald-400 border-b-2 border-emerald-200 dark:border-emerald-800 pb-2">Data Input</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Checkbox</h3>
             <div className="flex items-center space-x-2">
               <Checkbox id="terms" />
               <label
@@ -257,13 +257,13 @@ const ComponentShowcase: React.FC = () => {
             </div>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">File Input</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">File Input</h3>
             <FileInput />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Radio</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Radio</h3>
             <RadioGroup defaultValue="option-one">
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="option-one" id="option-one" />
@@ -276,18 +276,18 @@ const ComponentShowcase: React.FC = () => {
             </RadioGroup>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Range</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Range</h3>
             <Range />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Rating</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Rating</h3>
             <Rating />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Select</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Select</h3>
             <Select>
               <SelectTrigger>
                 <SelectValue placeholder="Select an option" />
@@ -300,43 +300,43 @@ const ComponentShowcase: React.FC = () => {
             </Select>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Text Input</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Text Input</h3>
             <Input placeholder="Enter text here..." />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Textarea</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Textarea</h3>
             <Textarea placeholder="Type your message here." />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Toggle</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Toggle</h3>
             <Toggle>Toggle</Toggle>
           </div>
         </div>
       </section>
       
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Layout</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Artboard</h3>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-emerald-600 dark:text-emerald-400 border-b-2 border-emerald-200 dark:border-emerald-800 pb-2">Layout</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Artboard</h3>
             <Artboard />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Button Group</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Button Group</h3>
             <ButtonGroup />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Divider</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Divider</h3>
             <Divider />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Drawer</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Drawer</h3>
             <Drawer>
               <DrawerTrigger asChild>
                 <Button variant="outline">Open Drawer</Button>
@@ -351,43 +351,43 @@ const ComponentShowcase: React.FC = () => {
             </Drawer>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Footer</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Footer</h3>
             <Footer />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Hero</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Hero</h3>
             <Hero />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Indicator</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Indicator</h3>
             <Indicator />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Input Group</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Input Group</h3>
             <InputGroup />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Join</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Join</h3>
             <Join />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Mask</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Mask</h3>
             <Mask />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Stack</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Stack</h3>
             <Stack />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Toast</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Toast</h3>
             <Button
               onClick={() => {
                 toast({
@@ -403,11 +403,11 @@ const ComponentShowcase: React.FC = () => {
         </div>
       </section>
       
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Navigation</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Breadcrumbs</h3>
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-emerald-600 dark:text-emerald-400 border-b-2 border-emerald-200 dark:border-emerald-800 pb-2">Navigation</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Breadcrumbs</h3>
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
@@ -425,38 +425,38 @@ const ComponentShowcase: React.FC = () => {
             </Breadcrumb>
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Bottom Navigation</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Bottom Navigation</h3>
             <BottomNavigation />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Link</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Link</h3>
             <Link />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Menu</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Menu</h3>
             <Menu />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Navbar</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Navbar</h3>
             <Navbar />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Pagination</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Pagination</h3>
             <Pagination />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Steps</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Steps</h3>
             <Steps />
           </div>
           
-          <div className="p-4 border rounded-md">
-            <h3 className="font-medium mb-2">Tabs</h3>
+          <div className="p-6 border-2 border-emerald-100 dark:border-emerald-900/20 bg-white dark:bg-zinc-900 rounded-3xl shadow-md hover:shadow-lg transition-all">
+            <h3 className="font-medium mb-4 text-emerald-600 dark:text-emerald-400">Tabs</h3>
             <Tabs defaultValue="tab1">
               <TabsList>
                 <TabsTrigger value="tab1">Tab 1</TabsTrigger>

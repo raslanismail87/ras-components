@@ -126,7 +126,7 @@ export function Steps({
   children,
   ...props
 }: StepsProps) {
-  const stepsArray = React.Children.toArray(children)
+  React.Children.toArray(children)
   
   return (
     <div
